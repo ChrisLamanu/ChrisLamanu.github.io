@@ -1,6 +1,9 @@
 
 body{
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 1vh;
 }
 
 #boardGame{
@@ -12,7 +15,6 @@ body{
     height: 60%;
     background-color: #e9cd9c;
 }
-
 
 .circleSize{
     width: 100px;
@@ -48,7 +50,6 @@ body{
 }
 
 .imgContainer {
-    min-width: 100%;
     background-image: url("../img/background.jpg");
     background-size: cover;
     background-position: center;
@@ -62,22 +63,39 @@ body{
 }
 
 .rules {
-    font-size: 17px;
+    font-size: 1rem;
     color: white;
-    width: 70%;
+    height: fit-content;
     background-color: #6F837A;
     border-radius: 10px;
     border: black solid 1px;
 }
 
 #qrcode {
-    width: 300px;
     height: auto;
     cursor: pointer;
+    max-height: 20rem;
+    width: 100%;
 }
+
+.mainRow {
+    height: fit-content;
+    margin-top: 2rem;
+}
+
+.firstRow {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: .1rem;
+    margin-right: .1rem;
+}
+
+.c-mb-2 {
+    margin-bottom: 2rem;
+}
+
 .imgHead {
     height: 5rem;
     width: 5rem;
-    /* display: none; */
     opacity: 0;
 }
